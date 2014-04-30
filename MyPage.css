@@ -1,0 +1,114 @@
+
+
+header, body, nav, h1, main, sidebar, img {
+    display: block;
+    position: relative;
+
+}
+
+body {
+    width: 100%;
+    font-family: sans-serif;
+    background-color: gray;
+    font-size: 14pt;
+}
+
+#pagecontainer {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    background-color: white;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #333;
+    border: 5px solid green;
+    
+}
+header h1 {
+    position:absolute;
+    right:0;
+    top: 50%;
+    width: 70%;
+    line-height: 1.6em;
+    margin-top: -0.8em;
+    font-size: 1.6em;
+    float: right;
+    color: green;
+}
+
+#headerlogo {
+    float:left;
+    width: 150px;
+    height:auto;
+    border: 2px solid black;
+}
+
+header nav {
+    display:block;
+    width: 100%;
+    height: 40px;
+    margin: 198px auto 20px auto;
+    background-color: #66ff66;
+}
+
+header nav ul {
+    width:100%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    list-style-type: none;
+    border: 1px solid orange;
+}
+
+header nav li {
+    display: inline;
+    float:left;
+    height:38px;
+    margin-left: 1%;
+    margin-right:.8%;
+    border: 1px solid red;
+}
+
+#pagecontainer main {
+    text-align:left;    
+    padding: 10px 20px;
+}
+
+#pagecontainer main h1{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+#pagecontainer main p {
+    
+    padding: 10px 20px;
+}
+
+header nav li a  {
+    font-size: 20pt;
+    height:38px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid purple;
+    
+}
+
+header nav li a:hover  {
+    font-size: 20pt;
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    
+    
+}

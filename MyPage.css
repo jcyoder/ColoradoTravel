@@ -8,6 +8,7 @@ header, body, nav, h1, main, sidebar, img {
 
 body {
     width: 100%;
+    padding: 0;
     font-family: sans-serif;
     background-color: gray;
     font-size: 14pt;
@@ -18,6 +19,7 @@ body {
     margin: 20px auto;
     text-align: center;
     background-color: white;
+    border: 5px solid green;
 }
 
 header {
@@ -29,7 +31,7 @@ header {
     text-align: center;
     padding: 20px 0px;
     background-color: #333;
-    border: 5px solid green;
+    border-bottom: 5px solid green;
     
 }
 header h1 {
@@ -39,40 +41,48 @@ header h1 {
     width: 70%;
     line-height: 1.6em;
     margin-top: -0.8em;
-    font-size: 1.6em;
+    font-size: 1.8em;
     float: right;
     color: green;
 }
 
 #headerlogo {
     float:left;
-    width: 150px;
+    width: 10%;
+    min-width: 150px;
+    margin: 10px 10px 10px 30px;
     height:auto;
     border: 2px solid black;
 }
 
 header nav {
-    display:block;
+    position: absolute;
     width: 100%;
-    height: 40px;
-    margin: 198px auto 20px auto;
+    height: 20%;
+    bottom: 0px;
     background-color: #66ff66;
+    background: linear-gradient(to bottom, #4b4b4b, #66ff66, #4b4b4b);
+    background: -webkit-linear-gradient(#4b4b4b, #66ff66, #4b4b4b);
+    background: -o-linear-gradient(#4b4b4b, #66ff66, #4b4b4b);
+    background: -moz-linear-gradient(#4b4b4b, #66ff66, #4b4b4b);
+    
 }
 
 header nav ul {
-    width:100%;
-    height: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    position: relative;
+    height: 100%;
     list-style-type: none;
+    margin: 0px;
     border: 1px solid orange;
 }
 
 header nav li {
     display: inline;
     float:left;
-    height:38px;
+    text-align:center;
+    width: 10%;
+    height: auto;
+    padding: 10px;
     margin-left: 1%;
     margin-right:.8%;
     border: 1px solid red;
@@ -97,18 +107,36 @@ header nav li {
 
 header nav li a  {
     font-size: 20pt;
-    height:38px;
+    height:42px;
     padding: 5px 10px;
     text-decoration: none;
     border: 1px solid purple;
     
 }
 
+/*
 header nav li a:hover  {
     font-size: 20pt;
     text-decoration: none;
     color: white;
-    background-color: green;
-    
-    
+    background-color: #66ff66;
+    background: linear-gradient(to bottom, #4b4b4b, #aaaaaa, #4b4b4b);
+    background: -webkit-linear-gradient(#4b4b4b, #aaaaaa, #4b4b4b);
+    background: -o-linear-gradient(#4b4b4b, #aaaaaa, #4b4b4b);
+    background: -moz-linear-gradient(#4b4b4b, #aaaaaa, #4b4b4b);
 }
+ */   
+
+footer {
+    height: 40px;
+    clear: left;
+    text-align: center;
+    background-color: #66ff66;
+    background: linear-gradient(to bottom, #4b4b4b, #66ff66, #4b4b4b);
+    background: -webkit-linear-gradient(#4b4b4b, #66ff66, #4b4b4b);
+    background: -o-linear-gradient(#4b4b4b, #66ff66, #4b4b4b);
+    background: -moz-linear-gradient(#4b4b4b, #66ff66, #4b4b4b);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+    

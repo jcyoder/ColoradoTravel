@@ -60,7 +60,7 @@ header nav {
     width: 100%;
     height: 20%;
     bottom: 0px;
-    background-color: #66ff66;
+    background: #66ff66;
     background: linear-gradient(to bottom, #4b4b4b, #66ff66, #4b4b4b);
     background: -webkit-linear-gradient(#4b4b4b, #66ff66, #4b4b4b);
     background: -o-linear-gradient(#4b4b4b, #66ff66, #4b4b4b);
@@ -102,7 +102,7 @@ header nav li {
     
    /* border: 1px solid red;*/
 }
-header nav li a  {
+.navtext  {
     font-size: 20pt;
     width:100%;
     height:100%;

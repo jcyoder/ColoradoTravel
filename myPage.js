@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('.navButtons').mouseenter(function () {
         $(this).css('background', '#4b4b4b');
-        $(this).children('.navtext').css('color', 'white');
+        $(this).children('.navtext').css('color', '#66ff66');
     });
     
     $('.navButtons').mouseleave(function () {

@@ -33,7 +33,7 @@ $(document).ready(function () {
     
     $('.vertButtons').mouseleave(function () {
         $(this).css('background', '#4b4b4b');
-        $(this).children('.navtext').css('color', 'black');
+        $(this).children('.navtext').css('color', '#66ff66');
         $(this).children('.submenu').slideToggle('fast');
       // $(this).children('.submenu .submenuElem').css('background', '#4b4b4b');
     });

@@ -9,11 +9,12 @@ header, body, nav, h1, main, sidebar, img {
 }
 
 body {
-    width: 100%;
-    padding: 0;
-    font-family: sans-serif;
-    background-color: gray;
-    font-size: 14pt;
+        position: relative;
+        width: 100%;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: gray;
+        font-size: 14pt;
 }
 
 #pagecontainer {
@@ -54,7 +55,7 @@ header h1 {
     float:left;
     width: 10%;
     min-width: 150px;
-    margin: 10px 10px 10px 30px;
+    margin: 10px 15px 10px 30px;
     height:auto;
     border: 5px groove #545454;
 }
@@ -104,6 +105,10 @@ header nav ul {
     border-left: 5px groove green;
 }
 
+.smallVertNav {
+    display: none;
+}
+
 header nav li {
     display: inline;
     float:left;
@@ -149,28 +154,24 @@ header nav li {
     
 }
 
-#pagecontainer main {
-    text-align:left; 
-    padding: 10px 30px;
-   /* background-image: url(images/RMNPriver.png);
-    background-repeat: no-repeat;
-    background-position:right;
-    background-size:contain;
-*/
-}
+ #pagecontainer main {
+        width: 100%;
+        text-align:left; 
+        margin-left: 0px;
+        padding: 0px 0px 10px 0px;
+    }
 
-#pagecontainer main h1{
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    
+    #pagecontainer main h1{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
 
-}
+    }
 
-#pagecontainer main p {
-    
-    padding: 10px 20px;
-}
+    #pagecontainer main p {
+
+        padding: 10px 20px;
+    }
 
 footer {
     height: 40px;
@@ -184,4 +185,152 @@ footer {
     padding-top: 20px;
     padding-bottom: 10px;
 }
+ /* ******************************************************************************************************* */   
+@media screen and (max-width: 960px) {
     
+    body {
+        position: relative;
+        width: 100%;
+        min-width: 480px;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: gray;
+        font-size: 14pt;
+    }
+    
+    #pagecontainer {
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+        background-color: white;
+        border: 5px solid green;
+}
+    
+    header {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 220px;
+        text-align: center;
+        padding: 20px 0px;
+        background-color: #333;
+        border-bottom: 5px solid green;
+
+    }
+    
+    header h1 {
+        position:absolute;
+        top: 40%;
+        width: 70%;
+        right:0;
+        float: left;
+        line-height: 1.4em;
+        margin-top: -0.8em;
+        font-family: "Adobe Caslon Pro", sans-serif;
+        font-size: 2.2em;
+        text-align: left;
+        color: green;
+    }
+
+    #headerlogo {
+        float:left;
+        width: 100px;
+        max-width:150px;
+        min-width: 70px;
+        margin: 10px 10px 10px 30px;
+        height:auto;
+        border: 5px groove #545454;
+    }
+    
+    header nav {
+        display: none;
+    }
+    
+    #pagecontainer main {
+        width: 100%;
+        text-align:left; 
+        margin-left: 0px;
+        padding: 0px 0px 10px 0px;
+    }
+
+    #pagecontainer main h1 {
+        width: 68%;
+        float:right;
+        height:auto;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+
+    }
+
+    #pagecontainer main p {
+        display:block;
+        height:auto;
+        padding: 10px 20px;
+    }
+
+    .smallVertNav {
+        display: block; 
+        width: 32%;
+        margin-left: 0px;
+        margin-right: 4px;
+        background: #4b4b4b;
+        color: #66ff66;
+    }
+    
+    .smallVertNav ul {
+        width: 100%;
+        position: relative;
+        list-style-type: none;
+        margin: 0px;
+        padding:0px;
+        /*border: 1px solid orange;*/
+    }
+    
+    .vertButtons {
+        display: block;
+        text-align:center;
+        width: 95%;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 5px groove green;
+        border-left: none;
+       /* border: 1px solid red;*/
+    }
+    
+    .navtext  {
+        font-size: 16pt;
+        padding:10px 15%;
+        color: black;
+        text-decoration: none;
+       /* border: 1px solid purple;*/
+    }
+
+    .submenu {
+        position:absolute;
+        width:100%;
+        padding: 0;
+        margin: 0;
+        top: 48px;
+        z-index: 2;
+        display: none; 
+    }
+
+    .submenuElem {
+        width: 100%;
+        height: 100%;
+        font-size: 16pt;
+        color: #66ff66;
+        padding:16px 15% 4px 15%;
+        background: #4b4b4b;
+        border-bottom: 1px solid green;
+        text-align: left;
+
+    }
+    
+    footer {
+        display: none;   
+    }
+}

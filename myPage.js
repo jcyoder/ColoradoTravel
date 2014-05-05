@@ -24,4 +24,19 @@ $(document).ready(function () {
         $(this).css('color', '#66ff66');
     });
     
+    $('.vertButtons').mouseenter(function () {
+        $(this).css('background', '#333');
+        $(this).children('.navtext').css('color', '#66ff66');
+        $(this).children('.submenu').slideToggle('fast');
+       
+    });
+    
+    $('.vertButtons').mouseleave(function () {
+        $(this).css('background', '#4b4b4b');
+        $(this).children('.navtext').css('color', 'black');
+        $(this).children('.submenu').slideToggle('fast');
+      // $(this).children('.submenu .submenuElem').css('background', '#4b4b4b');
+    });
+
+    
 });

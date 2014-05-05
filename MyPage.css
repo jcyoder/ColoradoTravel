@@ -211,7 +211,7 @@ footer {
         top: 0;
         left: 0;
         width: 100%;
-        height: 220px;
+        height: 190px;
         text-align: center;
         padding: 20px 0px;
         background-color: #333;
@@ -255,22 +255,27 @@ footer {
     }
 
     #pagecontainer main h1 {
-        width: 68%;
+        width: 65%;
         float:right;
         height:auto;
         text-align: center;
         padding-top: 20px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
 
     }
 
     #pagecontainer main p {
-        display:block;
+        display: block;
+        text-align: left;
+        width: 68%;
+        margin-left: auto;
+        margin-right: auto;
         height:auto;
         padding: 10px 20px;
     }
 
     .smallVertNav {
+        position: absolute;
         display: block; 
         width: 32%;
         margin-left: 0px;
@@ -291,7 +296,7 @@ footer {
     .vertButtons {
         display: block;
         text-align:center;
-        width: 95%;
+        width: 100%;
         height: auto;
         padding-top: 10px;
         padding-bottom: 10px;

@@ -44,7 +44,7 @@ header h1 {
     width: 70%;
     line-height: 1.8em;
     margin-top: -0.8em;
-    font-family: "Adobe Caslon Pro", sans-serif;
+    font-family: "Adobe Caslon Pro", "Book Antiqua", sans-serif;
     font-size: 2.2em;
     text-align: left;
     float: left;
@@ -282,14 +282,14 @@ footer {
     
     header h1 {
         position:absolute;
-        top: 50%;
+        top: 40%;
         width: 70%;
         right:0;
         float: left;
         line-height: 1.4em;
         margin-top: -0.8em;
         margin-left: 30%;
-        font-family: "Adobe Caslon Pro", sans-serif;
+        font-family: "Adobe Caslon Pro", "Book Antiqua", sans-serif;
         font-size: 2em;
         text-align: left;
         color: green;
@@ -297,9 +297,11 @@ footer {
 
     #headerlogo {
         float:left;
-        width: 10%;
+        width: 85px;
+      /*width: 10%;*/
         max-width:150px;
         min-width: 70px;
+       
         margin: 10px 10px 10px 30px;
         height:auto;
         border: 5px groove #545454;
